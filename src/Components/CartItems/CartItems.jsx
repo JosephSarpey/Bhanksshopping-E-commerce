@@ -59,7 +59,7 @@ const CartItems = () => {
                 <p>If you have a promo code, Enter it here</p>
                 <div className="cartitems-promobox">
                     <input type="text" placeholder='Enter Promo Code' />
-                    <button>Apply</button>
+                    <button>Submit</button>
                 </div>
             </div>
         </div>
