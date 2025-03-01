@@ -141,17 +141,27 @@
         height: 45px;
         font-size: 13px;
     }
-    .cartitems-promobox{
-        width: auto;
-        max-width: 500px;
-    }
-    .cartitems-promobox input{
-        width: 100%;
-    }
-    .cartitems-promobox button{
-        width: 120px;
-        margin-left: -125px;
-    }
+    .cartitems-promobox {
+    position: relative; /* Ensures the button stays inside the input field */
+    width: 100%;
+    max-width: 500px;
+}
+
+.cartitems-promobox input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Prevents input from exceeding container */
+}
+
+.cartitems-promobox button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto; /* Adjust based on content */
+    padding: 8px 15px;
+}
+
 }
 
 @media(max-width:500px){
